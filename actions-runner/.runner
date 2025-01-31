@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 21,
+  "agentName": "Enterprise",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus12.actions.githubusercontent.com/RPIXvSPGpYlnXUsIdncMpYRU8C9WnY6d38keBR47DpTRO0tHQH/",
+  "gitHubUrl": "https://github.com/tyrantdavis/Github-Examples",
+  "workFolder": "_work"
+}
