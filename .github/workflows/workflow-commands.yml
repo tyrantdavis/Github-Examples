@@ -16,7 +16,7 @@ jobs:
           echo "::endgroup::"
       - name: "Step 1 - Capture ENV value"
         run: |
-          echo "ENV_VALUE=Greetings" >> GITHUB_ENV
+          echo "ENV_VALUE=Greetings" >> $GITHUB_ENV
       - name: "Step 2 - Use ENV value"
         run: |
           echo $ENV_VALUE
