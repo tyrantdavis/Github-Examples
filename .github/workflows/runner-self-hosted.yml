@@ -1,5 +1,19 @@
 # If you don't create a self-hosted runner you will see:
 # Waiting for a runner to pick up this job...
+# All that is need is to return to the command line
+# $ cd into actions-runner dir
+# execute the following at the command line:
+# $ ./run.sh
+
+# The terminal should produce the something similar to the following:
+#
+
+# √ Connected to GitHub
+
+#Current runner version: '2.321.0'
+# 2025-01-31 18:17:53Z: Listening for Jobs
+# 2025-01-31 18:17:55Z: Running job: example-job
+# 2025-01-31 18:18:23Z: Job example-job completed with result: Succeeded
 name: Self-hosted Runner Workflow
 
 on:
