@@ -1,0 +1,17 @@
+name: Context Workflow
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  context-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Context Step"
+        run: |
+          echo "Action - $ACTION_ENV"
+          echo "User Name - $ACTOR_ENV"
+        env:
+          ACTION_ENV: ${{github.action}}
+          ACTOR_ENV: ${{github.actor}}
