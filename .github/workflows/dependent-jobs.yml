@@ -1,0 +1,16 @@
+name: Dependent Jobs Workflow
+
+on: [push]
+
+jobs:
+  job-2:
+    runs_on: ubuntu-latest
+    needs: job-1
+    steps:
+      - name: Step A
+        run: echo "Monde!"
+  job-1:
+    runs_on: ubuntu-latest
+    steps:
+      - name: Step B
+        run: echo "Bonjour"
