@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: tyrantdavis/barsoom@0.0.2
+        uses: tyrantdavis/barsoom@0.0.3
         with:
           name: "Hore-em-Ma-Khuti"
       # Use the output from the `hello` step --
