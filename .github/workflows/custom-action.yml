@@ -10,6 +10,6 @@ jobs:
         uses: tyrantdavis/barsoom@0.0.2
         with:
           name: "Hore-em-Ma-Khuti"
-      # Use the output from the `hello` step
+      # Use the output from the `hello` step --
       - name: Get the output salutation
         run: echo "The time was ${{ steps.hello.outputs.salutation }}"
