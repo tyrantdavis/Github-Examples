@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: tyrantdavis/barsoom@0.0.2 hello-world-javascript-action@1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b
+        with:
+          name: "Hore-em-Ma-Khuti"
+      # Use the output from the `hello` step
+      - name: Get the output salutation
+        run: echo "The time was ${{ steps.hello.outputs.salutation }}"
